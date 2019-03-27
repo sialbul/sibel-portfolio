@@ -40,12 +40,14 @@ background-image: url(../images/code.jpg);
 
 
 #sibel {width: 68%; 
-    text-align: center;
+
     border:2px solid white;
     border-radius: 360px;
     margin-bottom: 30px;
+    margin-left: 55px;
     opacity: 0.6;
     filter: alpha(opacity=50); /* For IE8 and earlier */
+    float: none;
 }
 
 h3{text-align: center;
@@ -77,8 +79,10 @@ img {border:1px solid white;
     float: left;
     width: 40%;
     height: 40%;
-    margin: 50px;
+    margin: 20px;
 }
+
+.gallery { margin:50px;}
 
   .clearfix::before {
     content: "";
