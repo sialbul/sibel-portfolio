@@ -1,15 +1,13 @@
 body {font-family: 'Marvel', sans-serif;
-
-background-image: url(../images/code.jpg);    
-
+    -webkit-font-smoothing: antialiased;
 }
 
 .cover { margin: 0;}
 
-#namePart {background-color: rgba(0, 0, 0, 0.671);
+#namePart {background-color:  rgba(128, 128, 128, 0.486);
       position:fixed;
       top:0;
-      width: 23%;
+      width: 15%;
       padding-bottom: 100px;
       height: max-content;
 
@@ -27,25 +25,37 @@ background-image: url(../images/code.jpg);
      }
 
 #infoPart {
-    text-align: center;
-    line-height: 40px;
-    background-color: rgba(255, 255, 255, 0.719);
-    margin-top: 0px;
-     }
+  background-color: rgba(128, 128, 128, 0.623);
+  position: absolute;;
+  top:0;
+  width: 80%;
+  padding-bottom: 100px;
+  height: max-content;
+padding-top: 200px;  
+overflow-y:auto; 
+margin-left: 250px;}
         
 #intro{
     padding: 50px 35px;
     text-align: center;
-        }
+    position:fix;
+    margin-top:20px; 
+    line-height: 25px;
+  
+  }
+  
+#githubLeft{
 
+  color:white;
+  size: 48px;
+}
 
 #sibel {width: 68%; 
-
-    border:2px solid white;
+    border:2px solid black;
     border-radius: 360px;
     margin-bottom: 30px;
-    margin-left: 55px;
-    opacity: 0.6;
+    margin-left: 40px;
+    opacity: 0.8;
     filter: alpha(opacity=50); /* For IE8 and earlier */
     float: none;
 }
@@ -53,36 +63,51 @@ background-image: url(../images/code.jpg);
 h3{text-align: center;
     color:black;
     font-weight: bolder;
+    font-size: 25px;
 }
 h2{text-align: center;
-    color:white;
+    color:black;
     font-weight: bolder;
 }
-ul{color: white;
+ul{
+  color:black;
     font-weight: bolder;
     line-height: 50px;
     text-align: center;
     padding-left: 0px;
 }
 
-p {color:black;
+p {    color:black;
     font-weight: bolder;
     font-size: 20px;
 
+}
+
+#exp{
+  color: white;
 }
 #portfolio {padding: 80px 0 150px 0;
     overflow: hidden;
 }
 
-
-img {border:1px solid white;
-    float: left;
-    width: 40%;
-    height: 40%;
-    margin: 20px;
+#skillsImg {
+  width: 7%;
+    height: 7%;
+    border: none;
+    float: none;
+    margin-right: 50px;
+    margin-left: 80px;
 }
-
-.gallery { margin:50px;}
+img {border:2px solid black;
+         width: 30%;
+    height: 30%;
+    margin: 5px;
+}
+#projectBox {
+  border:1px solid black;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.671);
+}
 
   .clearfix::before {
     content: "";
@@ -178,7 +203,7 @@ img {border:1px solid white;
 	color:rgba(0, 0, 0, 0.4);
 }
 
-a  {color: white;
+a  {color:black;
   text-decoration: none;
 }
 a:hover {
@@ -191,9 +216,9 @@ a:hover {
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
     animation: 
-      typing 5.0s steps(40, end),
+      typing 10.0s steps(40, end),
       blink-caret .75s step-end infinite;
-  }
+      }
   
   .container3 {
     margin: 0 auto;
@@ -277,12 +302,10 @@ a:hover {
   
   .show {display: block;}
 
+#project {
+border: 2px solid black;
 
-  [class*="col-"] {
-    float: left;
-    padding: 15px;
-  }
-
+}
   /* For desktop: */
 
 .col-3 {width: 25%;}
@@ -304,4 +327,32 @@ a:hover {
 
   }
 }
-  
+
+
+
+/* particleground demo */
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+
+#particles {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: white;
+}
+canvas{
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+height: 4000px;
+
+}
