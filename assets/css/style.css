@@ -276,6 +276,8 @@ a:hover {
     border: none;
     cursor: pointer;
     font-family: 'Marvel', sans-serif;
+    z-index: 3;
+
   }
   
   .dropbtn:hover, .dropbtn:focus {
