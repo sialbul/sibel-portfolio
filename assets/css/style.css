@@ -17,15 +17,7 @@ body {
   }
     
       
-#myBtn {
-  display: none;
-  position: fixed;
-  top: 5px;
-  right: 30px;
-  z-index: 99;
-  background-color:  rgba(255, 0, 0, 0.473);
-  color: white;
-  }
+
 
 #infoPart {
   background-color: rgba(128, 128, 128, 0.623);
@@ -276,8 +268,7 @@ a:hover {
     border: none;
     cursor: pointer;
     font-family: 'Marvel', sans-serif;
-    z-index: 3;
-
+    z-index: 99;
   }
   
   .dropbtn:hover, .dropbtn:focus {
@@ -285,7 +276,6 @@ a:hover {
   }
   
   #myInput {
-    border-box: box-sizing;
     background-image: url('searchicon.png');
     background-position: 14px 12px;
     background-repeat: no-repeat;
@@ -350,6 +340,8 @@ border: 2px solid black;
   #projectBox {width: 95%; margin: 8px;}
   #intro {width: 100%}
   #skillsImg {width: 15%; margin: 8px}
+
+  
   
 
 }
@@ -382,3 +374,12 @@ vertical-align: baseline;
 height: 2600px;
 
 }
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 5px;
+  right: 30px;
+  z-index: 99;
+  background-color:  rgba(255, 0, 0, 0.473);
+  color: white;
+  }

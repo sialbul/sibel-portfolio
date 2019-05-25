@@ -1,11 +1,3 @@
-jQuery(document).ready(function(){
-	jQuery('.skillbar').each(function(){
-		jQuery(this).find('.skillbar-bar').animate({
-			width:jQuery(this).attr('data-percent')
-		},2000);
-	});
-});
-
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function menuFunction() {
@@ -43,7 +35,6 @@ window.onclick = function(e) {
 	if (x.matches) { // If media query matches
 	  $(".dropdown").show();
 	  $("#namePart").hide();
-	  document.getElementById("img").width = "100%";
 	  
 	} else {
 		$(".dropdown").hide();
@@ -54,7 +45,6 @@ window.onclick = function(e) {
   var x = window.matchMedia("(max-width: 780px)")
   myFunction(x) // Call listener function at run time
   x.addListener(myFunction) // Attach listener function on state changes
-
 
 
   // When the user scrolls down 20px from the top of the document, show the button
