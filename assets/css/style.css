@@ -84,7 +84,7 @@ p {    color:black;
   font-size: 16px;
   text-align: center;
 }
-#portfolio {padding: 80px 0 150px 0;
+#portfolio {padding: 5px 0 150px 0;
     overflow: hidden;
     clear: both;
 }
@@ -336,8 +336,11 @@ border: 2px solid black;
     width: 100%;
   }
   #projectBox {width: 95%; margin: 8px;}
-  #intro {width: 100%}
+  #intro {width: 100%;
+  padding:150px 80px 50px 0px;}
   #skillsImg {width: 15%; margin: 8px}
+  #skills{ padding-top: 200px;}
+  
 
   
   
