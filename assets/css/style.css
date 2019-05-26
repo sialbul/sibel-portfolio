@@ -336,13 +336,13 @@ border: 2px solid black;
     width: 100%;
   }
   #projectBox {width: 95%; margin: 8px;}
-  #intro {width: 100%;
-  padding:180px 0px 50px -5px;
+  #intro {width: 80%;
+  padding:180px 0px 50px 0px;
 margin-top: 50px;}
   #skillsImg {width: 15%; margin: 8px}
-  #skills{ padding-top: 250px;
+  #skills{ padding-top: 280px;
   margin-top: 50px;}
-  #skillsImg{width: 50%}
+  #skillsImg{width: 14%}
   
 
   
