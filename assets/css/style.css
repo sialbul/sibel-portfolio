@@ -337,12 +337,12 @@ border: 2px solid black;
   }
   #projectBox {width: 95%; margin: 8px;}
   #intro {width: 100%;
-  padding:180px 0px 50px 0px;
+  padding:180px 0px 50px -5px;
 margin-top: 50px;}
   #skillsImg {width: 15%; margin: 8px}
   #skills{ padding-top: 250px;
   margin-top: 50px;}
-  #skillsImg{width: 75%}
+  #skillsImg{width: 50%}
   
 
   
