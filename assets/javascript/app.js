@@ -1,67 +1,18 @@
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function menuFunction() {
-	document.getElementById("myDropdown").classList.toggle("show");
-  }
-  
-  function filterFunction() {
-	var input, filter, ul, li, a, i;
-	input = document.getElementById("myInput");
-	filter = input.value.toUpperCase();
-	div = document.getElementById("myDropdown").classList.toggle("show");
-	a = div.getElementsByTagName("a");
-	for (i = 0; i < a.length; i++) {
-	  txtValue = a[i].textContent || a[i].innerText;
-	  if (txtValue.toUpperCase().indexOf(filter) > -1) {
-		a[i].style.display = "";
-	  } else {
-		a[i].style.display = "none";
-	  }
-	}
-  }
 
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var myDropdown = document.getElementById("myDropdown");
-    if (myDropdown.classList.contains('show')) {
-      myDropdown.classList.remove('show');
-    }
-  }
-}
+// Get the navbar
+var navbar = document.getElementsByClassName("navbar");
 
-  function myFunction(x) {
-	if (x.matches) { // If media query matches
-	  $(".dropdown").show();
-	  $("#namePart").hide();
-	  
-	} else {
-		$(".dropdown").hide();
-		$("#namePart").show();
-	}
-  }
-  
-  var x = window.matchMedia("(max-width: 780px)")
-  myFunction(x) // Call listener function at run time
-  x.addListener(myFunction) // Attach listener function on state changes
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
 
-
-  // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("myBtn").style.display = "block";
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
   } else {
-    document.getElementById("myBtn").style.display = "none";
+    navbar.classList.remove("sticky");
   }
 }
-
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-

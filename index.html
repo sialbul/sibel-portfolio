@@ -1,277 +1,332 @@
 <!DOCTYPE html>
 <html>
-<link href="https://fonts.googleapis.com/css?family=Marvel" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-
+<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <link href="assets/css/style.css" rel="stylesheet" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
 
 <head>
     <title>M.Sibel Baslamisli</title>
 </head>
 
 <body>
-    <div id="particles">
-        <div class=container-fluid id="cover">
-            <div class="row">
-                <div class="col-3">
-                    <div id="namePart">
-                        <div class="container-fluid">
-                            <img id="sibel" src="assets/images/sibel.png">
-                            <h2>M. SIBEL BASLAMISLI</h2>
-                            <ul style="list-style-type:none;">
-                                <li> &#9742; 216 802 9268</li>
-                                <li> &#9993; sibaslamisli@gmail.com</li>
-                                <li>CLEVELAND/OH</li>
-                                <li class="fa" style="font-size:36px;"><a
-                                        href="https://www.linkedin.com/in/m-sibel-baslamisli-a14b6a90/"
-                                        target="blank">&#xf08c;</a>
-                                    <a href="https://github.com/sialbul" target="blank"><i class="fa fa-github"></i></a>
-                                </li>
-                                <li><a href="#intro">About Me</a></li>
-                                <li><a href="#skills">Skills</a></li>
-                                <li><a href="#portfolio">Projects</a></li>
 
+    <div class="gif-container"></div>
 
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
 
-                <div class="col-9">
-                    <div id="infoPart">
-                        <div class="dropdown">
-                            <button onclick="menuFunction()" class="dropbtn">Menu</button>
-                            <div id="myDropdown" class="dropdown-content">
-                                <h2>M. SIBEL BASLAMISLI</h2>
-                                <ul style="list-style-type:none;">
-                                    <li> &#9742; 216 802 9268</li>
-                                    <li> &#9993; sibaslamisli@gmail.com</li>
-                                    <li>CLEVELAND/OH</li>
-                                    <li class="fa" style="font-size:36px;"><a
-                                            href="https://www.linkedin.com/in/m-sibel-baslamisli-a14b6a90/"
-                                            target="blank">&#xf08c;</a>
-                                        <a href="https://github.com/sialbul" target="blank"><i
-                                                class="fa fa-github"></i></a>
-                                    </li>
-                                    <li><a href="#intro">About Me</a></li>
-                                    <li><a href="#skills">Skills</a></li>
-                                    <li><a href="#portfolio">Projects</a></li>
-
-                            </div>
-                        </div>
-
-                        <div class="typewriter">
-                            <div class="row" id="intro">
-                                <div class="container-fluid">
-                                    <h3> &#60; About Me &#62;</h3>
-                                    <div class="container3">
-                                        <p>As a hobby, I used to make websites by using templates in Wordpress and
-                                            design
-                                            flyers in Canvas. It all started as a hobby, but then turned to spending
-                                            hours
-                                            on the computer. It's always a pleasure to see the outcome of my work.
-                                            <br><br> I
-                                            have
-                                            decided to create more professional work, so I completed a full stack
-                                            bootcamp
-                                            at Case Western University to make my dream come true.</p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="typewriter">
-
-                            <div class="row" id="skills">
-                                <div class="container-fluid">
-                                    <h3> &#60; Skills &#62;</h3>
-                                    <br>
-                                    <img id="skillsImg" src="./assets/images/html-svg-2.png" alt="html" title="Html">
-                                    <img id="skillsImg" src="./assets/images/css3-logo.png" alt="css" title="Css">
-                                    <img id="skillsImg"
-                                        src="./assets/images/1200px-Unofficial_JavaScript_logo_2.svg.png"
-                                        alt="javascript" title="javaScript">
-                                    <img id="skillsImg" src="./assets/images/node-js-736399_960_720.png" alt="node.js"
-                                        title="node.js">
-                                    <img id="skillsImg" src="./assets/images/jquery-logo-png--512.png" alt="jquery"
-                                        title="jQuery">
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="typewriter">
-
-                            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-                            <div class="row" id="portfolio">
-                                <div class="container-fluid">
-                                    <div class="col">
-                                        <h3> &#60; Projects &#62;</h3>
-                                        <br>
-                                        <div class="clearfix">
-                                            <div class="row">
-                                                <div class="col-6" id="projectBox">
-                                                    <a target="_blank"
-                                                        href="https://peaceful-beyond-77283.herokuapp.com/">
-                                                        <img src="assets/images/burger.png" alt="Eat de Burger">
-                                                    </a>
-                                                    <p id="exp"> This project is a burger logger
-                                                        with MySQL, Node, Express, Handlebars and <br>
-                                                        a homemade ORM, following the MVC design pattern.
-                                                        <br> <br>
-                                                        <a href="https://github.com/sialbul/burger" target="blank"><i
-                                                                id="githubLeft" class="fa fa-github"></i></a> </p>
-
-                                                </div>
-                                                <div class="col-6" id="projectBox">
-                                                    <a target="_blank" href="https://boiling-lake-37451.herokuapp.com/">
-                                                        <img src="assets/images/friend finder.png" alt="Friend Finder">
-                                                    </a>
-                                                    <br>
-                                                    <p id="exp"> The application is implemented using a Node.js and
-                                                        Express
-                                                        server on the back end and the CSS framework on the front
-                                                        end.
-                                                        <br> <br>
-                                                        <a href="https://github.com/sialbul/friendFinder"
-                                                            target="blank"><i id="githubLeft"
-                                                                class="fa fa-github"></i></a> </p>
-
-                                                </div>
-                                            </div>
-
-                                            <div class="row">
-                                                <div class="col-6" id="projectBox">
-                                                    <a target="_blank" href="https://sialbul.github.io/bamazon/">
-                                                        <img src="assets/images/bamazon.png" alt="Bamazon">
-                                                    </a>
-                                                    <p id="exp">The goal was to create an Amazon-like storefront
-                                                        using
-                                                        Node.js and MySQL.
-                                                        <br> <br>
-                                                        <a href="https://github.com/sialbul/bamazon" target="blank"><i
-                                                                id="githubLeft" class="fa fa-github"></i></a></p>
-                                                </div>
-
-                                                <div class="col-6" id="projectBox">
-                                                    <a target="_blank" href="https://github.com/sialbul/liri-node-app">
-                                                        <img src="assets/images/liri-node.png" alt="liri-node">
-                                                    </a>
-                                                    <p id="exp"> LIRI is a command line node app that takes in
-                                                        parameters
-                                                        and gives back data.<br>
-                                                        Technologies Used: Javascript Nodejs <br>
-                                                        Node packages: Node-Spotify-API Request Moment DotEnv<br>
-                                                        APIs used: Bands in Town OMDB Git GitHub
-                                                        <br><br>
-                                                        <a href="https://github.com/sialbul/liri-node-app"
-                                                            target="blank"><i id="githubLeft"
-                                                                class="fa fa-github"></i></a></p>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="row">
-                                                <div class="col-6" id="projectBox">
-                                                    <a target="_blank"
-                                                        href="https://sialbul.github.io/RPS-Multiplayer/">
-                                                        <img src="assets/images/rps.jpg" alt="Rock Paper Siccors">
-                                                    </a>
-                                                    <p id="exp"> Rock Paper Scissors game is
-                                                        an online multiplayer game with the help of Firebase.
-                                                        <br><br>
-                                                        <a href="https://github.com/sialbul/RPS-Multiplayer"
-                                                            target="blank"><i id="githubLeft"
-                                                                class="fa fa-github"></i></a></p>
-                                                </div>
-
-                                                <div class="col-6" id="projectBox">
-                                                    <a target="_blank" href="https://sialbul.github.io/unit-4-game/">
-                                                        <img src="assets/images/starwars.jpg" alt="Starwars">
-                                                    </a>
-                                                    <p id="exp"> Star Wars RPG game using HTML5, CSS, Bootstrap and
-                                                        jQuery.
-
-                                                        <br><br>
-                                                        <a href="https://sialbul.github.io/unit-4-game/"
-                                                            target="blank"><i id="githubLeft"
-                                                                class="fa fa-github"></i></a></p>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="row">
-                                                <div class="col-6" id="projectBox">
-
-                                                    <a target="_blank" href="https://kandrac.github.io/CityGuide/">
-                                                        <img src="assets/images/cityguide.jpg" alt="City Guide">
-                                                    </a>
-                                                    <p id="exp">This application takes a city that the user enters
-                                                        and retrieves relevant data from multiple APIs to show
-                                                        information on the city entered.
-                                                        <br><br>
-                                                        <a href="https://kandrac.github.io/CityGuide/" target="blank"><i
-                                                                id="githubLeft" class="fa fa-github"></i></a></p>
-                                                </div>
-
-                                                <div class="col-6" id="projectBox">
-                                                    <a target="_blank" href="https://sialbul.github.io/giphy-API/">
-                                                        <img src="assets/images/horror gif.jpg" alt="Horror Giphy0">
-                                                    </a>
-                                                    <p id="exp">In this app is implemented using the GIPHY API to
-                                                        make a
-                                                        dynamic web page that populates with horror gifs.<br>
-                                                        It calls the GIPHY API and use JavaScript and jQuery to
-                                                        change
-                                                        the
-                                                        HTML of the site.
-                                                        <br><br>
-                                                        <a href="https://github.com/sialbul/giphy-API" target="blank"><i
-                                                                id="githubLeft" class="fa fa-github"></i></a></p>
-                                                </div>
-                                            </div>
-
-                                            <div class="row">
-                                                <div class="col-6" id="projectBox"> <a target="_blank"
-                                                        href="https://sialbul.github.io/Word-Guess-Game/">
-                                                        <img src="assets/images/hangman.jpg" alt="Hangman">
-                                                    </a>
-                                                    <p id="exp"> Hangman with 80`s music. Used Javascript, HTML and
-                                                        CSS.
-                                                        <br><br>
-                                                        <a href="https://github.com/sialbul/Word-Guess-Game"
-                                                            target="blank"><i id="githubLeft"
-                                                                class="fa fa-github"></i></a></p>
-                                                </div>
-                                            </div>
-
-
-                                        </div>
-                                        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+                <img id="sibel" src="assets/images/sibel.png">
+                <h2>M. SIBEL BASLAMISLI</h2>
+                <ul style="list-style-type:none;">
+                    <li> &#9742; 216 802 9268</li>
+                    <li> &#9993; sibaslamisli@gmail.com</li>
+                    <li>CLEVELAND/OH</li>
+                    <li class="fa" style="font-size:36px;"><a
+                            href="https://www.linkedin.com/in/m-sibel-baslamisli-a14b6a90/" target="blank">&#xf08c;</a>
+                        <a href="https://github.com/sialbul" target="blank"><i class="fa fa-github"></i></a>
+                    </li>
+                    <li><a href="#intro">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                </ul>
             </div>
         </div>
+    </nav>
+
+
+
+
+    <div class=container-fluid>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row" id="intro">
+                    <div class="typewriter">
+                        <h3> About Me </h3>
+                    </div>
+                    <br>
+                    <div class="container3">
+                        <p>As a hobby, I used to make websites by using templates in Wordpress and
+                            design
+                            flyers in Canvas. It all started as a hobby, but then turned to spending
+                            hours
+                            on the computer. It's always a pleasure to see the outcome of my work.
+                            <br><br> I
+                            have
+                            decided to create more professional work, so I completed a full stack
+                            bootcamp
+                            at Case Western University to make my dream come true.</p>
+
+                    </div>
+                </div>
+
+                <div class="row" id="skills">
+                    <div class="col-md-12">
+                        <div class="typewriter">
+                            <h3> Skills <h3>
+                        </div>
+                        <div class="container4">
+                            <br>
+                            <img id="skillsImg" src="./assets/images/html-svg-2.png" alt="html" title="Html">
+                            <img id="skillsImg" src="./assets/images/css3-logo.png" alt="css" title="Css">
+                            <img id="skillsImg" src="./assets/images/1200px-Unofficial_JavaScript_logo_2.svg.png"
+                                alt="javascript" title="javaScript">
+                            <img id="skillsImg" src="./assets/images/node-js-736399_960_720.png" alt="node.js"
+                                title="node.js">
+                            <img id="skillsImg" src="./assets/images/jquery-logo-png--512.png" alt="jquery"
+                                title="jQuery">
+                        </div>
+                    </div>
+                </div>
+
+                <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+                <div class="row" id="portfolio">
+                    <div class="col-md-12">
+                        <div class="typewriter">
+                            <h3> Projects </h3>
+                        </div>
+                        <br>
+                        <div class="col-md-6">
+                            <div id="projectBox">
+                                <div class="container">
+                                    <img src="assets/images/burger.png" alt="Eat de Burger">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <p id="exp"> This project is a burger logger
+                                                with MySQL, Node, Express, Handlebars and <br>
+                                                a homemade ORM, following the MVC design pattern.
+                                                <br> <br>
+                                                <a target="_blank" title="Visit Website"
+                                                    href="https://peaceful-beyond-77283.herokuapp.com/">
+                                                    <i id="githubLeft" class="fa fa-globe"></i>
+
+                                                </a>
+                                                <a href="https://github.com/sialbul/burger" title="GitHub"
+                                                    target="blank"><i id="githubLeft" class="fa fa-github"></i></a>
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="projectBox">
+                                <div class="container">
+                                    <img src="assets/images/friend finder.png" alt="Friend Finder">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <p id="exp"> The application is implemented using a
+                                                Node.js and Express server on the back end and the CSS framework on the
+                                                front end.
+                                                <br> <br>
+                                                <a target="_blank" title="Visit Website"
+                                                    href="https://boiling-lake-37451.herokuapp.com/">
+                                                    <i id=" githubLeft" class="fa fa-globe"></i>
+
+                                                </a>
+                                                <a href="https://github.com/sialbul/friendFinder" target="blank"><i
+                                                        id="githubLeft" class="fa fa-github"></i></a>
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div id="projectBox">
+                                <div class="container">
+                                    <img src="assets/images/bamazon.png" alt="Bamazon">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <p id="exp">The goal was to create an Amazon-like
+                                                storefront
+                                                using
+                                                Node.js and MySQL.
+                                                <br> <br>
+                                                <a href="https://github.com/sialbul/bamazon" target="blank">
+                                                    <i id="githubLeft" class="fa fa-github"></i></a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div id="projectBox">
+                                <div class="container">
+                                    <a target="_blank" href="https://github.com/sialbul/liri-node-app">
+                                        <img src="assets/images/liri-node.png" alt="liri-node">
+                                    </a>
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <p id="exp"> LIRI is a command line node app that
+                                                takes in
+                                                parameters
+                                                and gives back data.<br>
+                                                Technologies Used: Javascript Nodejs <br>
+                                                Node packages: Node-Spotify-API Request Moment
+                                                DotEnv<br>
+                                                APIs used: Bands in Town OMDB Git GitHub
+                                                <br><br>
+                                                <a href="https://github.com/sialbul/liri-node-app" target="blank"><i
+                                                        id="githubLeft" class="fa fa-github"></i></a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div id="projectBox">
+                                <div class="container">
+                                    <img src="assets/images/rps.jpg" alt="Rock Paper Siccors">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <p id="exp"> Rock Paper Scissors game is
+                                                an online multiplayer game with the help of
+                                                Firebase.
+                                                <br><br>
+                                                <a target="_blank" title="Visit Website"
+                                                    href="https://sialbul.github.io/RPS-Multiplayer/">
+                                                    <i id="githubLeft" class="fa fa-globe"></i>
+                                                </a>
+                                                <a href="https://github.com/sialbul/RPS-Multiplayer" target="blank"><i
+                                                        id="githubLeft" class="fa fa-github"></i></a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6">
+                            <div id="projectBox">
+                                <div class="container">
+                                    <img src="assets/images/starwars.jpg" alt="Starwars">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <p id="exp"> Star Wars RPG game using HTML5, CSS,
+                                                Bootstrap and jQuery.
+                                                <br><br>
+                                                <a target="_blank" title="Visit Website"
+                                                    href="https://sialbul.github.io/unit-4-game/">
+                                                    <i id="githubLeft" class="fa fa-globe"></i>
+                                                </a>
+                                                <a href="https://sialbul.github.io/unit-4-game/" target="blank"><i
+                                                        id="githubLeft" class="fa fa-github"></i></a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-6">
+                            <div id="projectBox">
+                                <div class="container">
+                                    <img src="assets/images/cityguide.jpg" alt="City Guide">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <p id="exp">This application takes a city that the user
+                                                enters and retrieves relevant data from multiple APIs to
+                                                show information on the city entered.
+                                                <br><br>
+                                                <a target="_blank" title="Visit Website"
+                                                    href="https://kandrac.github.io/CityGuide/">
+                                                    <i id="githubLeft" class="fa fa-globe"></i>
+
+                                                </a>
+                                                <a href="https://github.com/Kandrac/CityGuide" target="blank"><i
+                                                        id="githubLeft" class="fa fa-github"></i></a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div id="projectBox">
+                                <div class="container">
+                                    <img src="assets/images/horror gif.jpg" alt="Horror Giphy0">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <p id="exp">This app is implemented using the GIPHY API
+                                                to make a dynamic web page that populates with horror
+                                                gifs.<br>
+                                                It calls the GIPHY API and use JavaScript and jQuery
+                                                to change the HTML of the site.
+                                                <br><br>
+                                                <a target="_blank" title="Visit Website"
+                                                    href="https://sialbul.github.io/giphy-API/">
+                                                    <i id="githubLeft" class="fa fa-globe"></i>
+                                                </a>
+                                                <a href="https://github.com/sialbul/giphy-API" target="blank"><i
+                                                        id="githubLeft" class="fa fa-github"></i></a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div id="projectBox">
+                                <div class="container">
+                                    <img src="assets/images/hangman.jpg" alt="Hangman">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <p id="exp"> Hangman Game with 80`s music. Used Javascript,
+                                                HTML and CSS.
+                                                <br><br>
+                                                <a target="_blank" title="Visit Website"
+                                                    href="https://sialbul.github.io/Word-Guess-Game/">
+                                                    <i id="githubLeft" class="fa fa-globe"></i>
+
+                                                </a>
+                                                <a href="https://github.com/sialbul/Word-Guess-Game" target="blank"><i
+                                                        id="githubLeft" class="fa fa-github"></i></a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+                    </div>
+                </div>
+                <!-- Footer -->
+<footer class="page-footer font-small blue">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Copyright: M.Sibel Baslamisli
+        </div>
+        <!-- Copyright -->
+      
+      </footer>
+      <!-- Footer -->
+            </div>
+        </div>
+
     </div>
-    </div>
-    </div>
-    </div>
+    
+
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"
         integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous">
         </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
     <script src="./assets/javascript/app.js"></script>
 
-    <!-- remember, jQuery is completely optional -->
-    <!-- <script type='text/javascript' src='js/jquery-1.11.1.min.js'></script> -->
-    <script type='text/javascript' src='assets/javascript/jquery.particleground.js'></script>
-    <script type='text/javascript' src='assets/javascript/demo.js'></script>
 
 </body>
 
