@@ -1,4 +1,14 @@
+$(document).ready(function() {
+  $('#navbar').hide;
+  $('.dropbtn').show;
 
+
+  $('.dropbtn').on('click', function(e) {
+		
+    $('#navbar').show;
+    $('.dropbtn').show;
+  })
+})
 
 // When the user scrolls the page, execute myFunction 
 window.onscroll = function() {myFunction()};
