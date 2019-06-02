@@ -1,41 +1,50 @@
 body {
   font-family: 'Raleway', sans-serif;
   margin:0;
-   
   }
   
+.jumbotron{
+  opacity: 0.9;
 
-#intro {
-  width: 100%;
-  padding: 25px 35px;
-  text-align: center;
-  line-height: 25px;
-  margin-top: 50px;
-  z-index: 1;
+background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/code.jpg");
+background-position: center; /* Center the image */
+background-repeat: no-repeat; /* Do not repeat the image */
+background-size: cover; /* Resize the background image to cover the entire container */
+height: 20%;
+  }
+
+#about{
+  color:white;
 }
-  
+
+
+#sibel {
+  width: 40%; 
+  height: 10%;
+  border:2px solid black;
+  border-radius: 360px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+ 
+}
+
+.btn{
+  margin:10px;
+}
+
+
 #githubLeft {
   color:white;
   size: 48px;
 }
 
-#sibel {
-  width: 80%; 
-  height: 10%;
-  border:2px solid black;
-  border-radius: 360px;
-  margin-bottom: 30px;
-  margin-left: 40px;
-  opacity: 0.8;
-  filter: alpha(opacity=50); /* For IE8 and earlier */
-  float: none;
-}
 
 h3 {
   text-align: center;
   color:black;
   font-weight: bolder;
   font-size: 25px;
+  margin-bottom: 20px;
 }
 
 h2 {
@@ -57,7 +66,7 @@ li{
 }
 
 p {
-  color:black;
+  color:white;
   font-weight: bolder;
   font-size: 16px;
 }
@@ -110,7 +119,8 @@ p {
   font-size: 16px;
   text-align: center;
 }
-#portfolio {padding: 5px;
+#portfolio {
+  padding: 5px;
   width: 100%;
   margin-top: 50px;
   }
@@ -122,6 +132,8 @@ p {
   height:300px;
   margin:0 auto;  
   margin-bottom: 20px;
+  
+  
 }
 
 #skills {
@@ -150,8 +162,8 @@ img {
 a  {
   color:black;
   text-decoration: none;
-  margin-right: 2px;
-  font-size: 16px;
+  margin-right: 5px;
+  font-size: 26px;
 }
 
 a:hover {
@@ -168,16 +180,24 @@ a:hover {
   typing 10.0s steps(40, end),
   blink-caret .75s step-end infinite;
 }
-  
+
+
 .container3 {
   margin: 0 auto;
-  width: 70%;
+  width: 60%;
+  text-align: center;
 }
 
 .container4 {
   margin: 0 auto;
   width: 80%;
 }
+.container5 {
+  width: 100%;
+  margin-top: 50px;
+}
+
+
 
 /* The typing effect */
 @keyframes typing {
@@ -244,67 +264,6 @@ a:hover {
   color: white;
   }
 
-.navbar {
-  overflow: hidden;
-  background-color: white;
-  position: fixed;
-  top:10px;
-  left: 20px;
-  width: 20%;
-  border:none;
-  
-}
-
-/* Navbar links */
-.navbar a {
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-
-}
-/* The dropdown container */
-.dropdown {
-  overflow: hidden;
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown button */
-.dropdown .dropbtn {
-  border-radius: 50%;
-  font-size: 16px; 
-  outline: none;
-  color:black;
-  padding: 14px 16px;
-  background-color: inherit;
-  font: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
-}
-
-/* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color:#3C5A99;
-}
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-  display: none;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 3;
-  background-color: #f9f9f9;
-  width: 100%;
-  left: 0;
-  
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-/* Page content */
-.content {
-  padding: 16px;
-}
 footer {
   background-color: #f2f2f2;
   padding: 25px;

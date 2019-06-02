@@ -2,7 +2,7 @@
 <html>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <link href="assets/css/style.css" rel="stylesheet" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -14,54 +14,66 @@
 
 <body>
 
-    <div class="gif-container"></div>
-
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="dropdown">
-            <button class="dropbtn">Menu</button>
-            <div class="dropdown-content">
-
-                <img id="sibel" src="assets/images/sibel.png">
-                <h2>M. SIBEL BASLAMISLI</h2>
-                <ul style="list-style-type:none;">
-                    <li> &#9742; 216 802 9268</li>
-                    <li> &#9993; sibaslamisli@gmail.com</li>
-                    <li>CLEVELAND/OH</li>
-                    <li class="fa" style="font-size:36px;"><a
-                            href="https://www.linkedin.com/in/m-sibel-baslamisli-a14b6a90/" target="blank">&#xf08c;</a>
-                        <a href="https://github.com/sialbul" target="blank"><i class="fa fa-github"></i></a>
-                    </li>
-                    <li><a href="#intro">About Me</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#portfolio">Projects</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-
-
-
     <div class=container-fluid>
         <div class="row">
             <div class="col-md-12">
-                <div class="row" id="intro">
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                    M. Sibel Baslamisli </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img id="sibel" src="assets/images/sibel.png">
+                                <h2>M. SIBEL BASLAMISLI</h2>
+                                <ul style="list-style-type:none;">
+                                    <li> &#9742; 216 802 9268</li>
+                                    <li> &#9993; sibaslamisli@gmail.com</li>
+                                    <li>CLEVELAND/OH</li>
+                                    <li class="fa" style="font-size:36px;"><a
+                                            href="https://www.linkedin.com/in/m-sibel-baslamisli-a14b6a90/"
+                                            target="blank">&#xf08c;</a>
+                                        <a href="https://github.com/sialbul" target="blank"><i
+                                                class="fa fa-github"></i></a>
+                                    </li>
+                                    <li><a href="#intro">About Me</a></li>
+                                    <li><a href="#skills">Skills</a></li>
+                                    <li><a href="#portfolio">Projects</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="jumbotron jumbotron-fluid" id="intro">
                     <div class="typewriter">
-                        <h3> About Me </h3>
+                        <h3 id="about"> About Me </h3>
                     </div>
                     <br>
-                    <div class="container3">
-                        <p>As a hobby, I used to make websites by using templates in Wordpress and
+                    <div class="jumbotron jumbo_text">
+                        <p class="lead text-center font-weight-bold">As a hobby, I used to make websites by using
+                            templates in Wordpress and
                             design
-                            flyers in Canvas. It all started as a hobby, but then turned to spending
+                            flyers in Canvas. <br>It all started as a hobby, but then turned to spending
                             hours
                             on the computer. It's always a pleasure to see the outcome of my work.
                             <br><br> I
                             have
-                            decided to create more professional work, so I completed a full stack
+                            decided to create more professional work,<br>
+                        so I completed a full stack
                             bootcamp
                             at Case Western University to make my dream come true.</p>
-
                     </div>
                 </div>
 
@@ -83,18 +95,16 @@
                         </div>
                     </div>
                 </div>
-
+                <div class="typewriter">
+                    <h3> Projects </h3>
+                </div>
                 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-
-                <div class="row" id="portfolio">
-                    <div class="col-md-12">
-                        <div class="typewriter">
-                            <h3> Projects </h3>
-                        </div>
-                        <br>
+                <div class="container5">
+                    <div class="row" id="portfolio">
                         <div class="col-md-6">
                             <div id="projectBox">
                                 <div class="container">
+                                    <!--Overlay container-->
                                     <img src="assets/images/burger.png" alt="Eat de Burger">
                                     <div class="overlay">
                                         <div class="text">
@@ -123,7 +133,9 @@
                                     <div class="overlay">
                                         <div class="text">
                                             <p id="exp"> The application is implemented using a
-                                                Node.js and Express server on the back end and the CSS framework on the
+                                                Node.js and Express server on the back end and the CSS framework
+                                                on
+                                                the
                                                 front end.
                                                 <br> <br>
                                                 <a target="_blank" title="Visit Website"
@@ -164,19 +176,17 @@
                         <div class="col-md-6">
                             <div id="projectBox">
                                 <div class="container">
-                                    <a target="_blank" href="https://github.com/sialbul/liri-node-app">
-                                        <img src="assets/images/liri-node.png" alt="liri-node">
-                                    </a>
+                                    <img src="assets/images/liri-node.png" alt="liri-node">
                                     <div class="overlay">
                                         <div class="text">
                                             <p id="exp"> LIRI is a command line node app that
                                                 takes in
                                                 parameters
-                                                and gives back data.<br>
-                                                Technologies Used: Javascript Nodejs <br>
-                                                Node packages: Node-Spotify-API Request Moment
-                                                DotEnv<br>
-                                                APIs used: Bands in Town OMDB Git GitHub
+                                                and gives back data.
+                                                Javascript Nodejs <br>
+                                                Node-Spotify-API Request Moment
+                                                DotEnv
+                                                Bands in Town API, OMDB API
                                                 <br><br>
                                                 <a href="https://github.com/sialbul/liri-node-app" target="blank"><i
                                                         id="githubLeft" class="fa fa-github"></i></a></p>
@@ -303,28 +313,31 @@
                         </div>
                         <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
                     </div>
+
+
                 </div>
                 <!-- Footer -->
-<footer class="page-footer font-small blue">
+                <footer class="page-footer font-small blue">
 
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2019 Copyright: M.Sibel Baslamisli
-        </div>
-        <!-- Copyright -->
-      
-      </footer>
-      <!-- Footer -->
+                    <!-- Copyright -->
+                    <div class="footer-copyright text-center py-3">© 2019 Copyright: M.Sibel Baslamisli
+                    </div>
+                    <!-- Copyright -->
+
+                </footer>
+                <!-- Footer -->
             </div>
         </div>
 
     </div>
-    
+
 
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"
         integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous">
         </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="./assets/javascript/app.js"></script>
 
 
