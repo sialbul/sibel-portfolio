@@ -4,19 +4,23 @@ body {
   }
   
 .jumbotron{
-  opacity: 0.9;
-
-background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/code.jpg");
+opacity: 0.9;
+background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/code3.jpg");
 background-position: center; /* Center the image */
 background-repeat: no-repeat; /* Do not repeat the image */
 background-size: cover; /* Resize the background image to cover the entire container */
 height: 20%;
   }
 
+.jumbo_text{
+  line-height: 40px;
+  color: white;
+  font-size: 24px;
+}
+
 #about{
   color:white;
 }
-
 
 #sibel {
   width: 40%; 
