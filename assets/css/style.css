@@ -138,16 +138,13 @@ p {
 
 #skills {
   width: 100%;
-  margin: 50px 0;
-}
+text-align: center;}
 
 #skillsImg {
   width: 7%;
   height: 17%;
   border: none;
-  margin: 4px;
-  margin-right: 3%;
-  margin-left: 5%;
+  margin: 40px;
   display: inline;
 }
 
