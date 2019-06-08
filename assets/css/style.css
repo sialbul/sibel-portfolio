@@ -29,11 +29,11 @@ text-align: center;
 }
 
 #sibel {
-  width: 20%; 
+  width: 18%; 
   height: 70%;
   border:2px solid white;
   border-radius: 360px;
-  margin: 10px 40px 50px 60px;
+  margin: 10px 40px;
   float: left;
  
 }
@@ -238,6 +238,44 @@ a:hover {
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+
+@media only screen and (max-width: 1180px) {
+
+#sibel{
+  width: 20%;
+  height:55%;
+}
+}
+
+@media only screen and (max-width: 992px) {
+
+  #sibel{
+    width: 25%;
+    height:50%;
+    margin: 10px 40px;
+  }
+  #intro {padding-left: 20px;}
+  }
+  @media only screen and (max-width: 768px) {
+
+    #sibel{
+      width: 32%;
+      height:30%;
+      margin: 25px 180px;
+    }
+    #jumbo_text{margin: 0 auto;
+    }
+    }
+    @media only screen and (max-width: 600px) {
+
+      #sibel{
+        width: 45%;
+        height:30%;
+        margin: 20px 140px;
+      }
+      #intro {padding-left: 40px;
+      text-align: center}
+      }
 
 @media only screen and (max-width: 480px) {
   /* For mobile phones: */
