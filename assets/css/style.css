@@ -369,7 +369,7 @@ nav{
       height: 250px;
     }
 #nav-mobile{
-      padding-top: 65px;
+      margin-top: 65px;
       text-align: center;
 }
 }
