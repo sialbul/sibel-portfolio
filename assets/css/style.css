@@ -349,9 +349,9 @@ footer a{
   margin: 0px;}
  
   nav{
-  padding-top: 10px;
-  height:150px;
-  text-align: center;
+    background-color: white;
+    color:black;
+    padding-top: 10px;
   }
   
 }
