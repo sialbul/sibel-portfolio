@@ -355,3 +355,14 @@ footer a{
   }
   
 }
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    nav{
+      background-color: white;
+      color:black;
+      padding-top: 10px;
+    }
+}
