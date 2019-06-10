@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -17,65 +18,63 @@
     <div class=container-fluid>
         <div class="row">
             <div class="col-md-12">
-
-                <nav class="navbar navbar-default navbar-fixed-top">
-                    <div class="container-fluid">
-                        <div class="navbar-header">
+                <nav>
+                    <div class="nav-extended">
+                        <div class="container-fluid">
+                            <div class="brand-logo">
                                 <h2> Sibel Baslamisli</h2>
                             </div>
+                            <ul id="nav-mobile" class="right">
+                                <li><a href="#intro">About Me</a></li>
+                                <li><a href="#skills">Skills</a></li>
+                                <li><a href="#portfolio">Projects</a></li>
 
-                        <ul class="nav navbar-right">
-                            <li><a href="#intro">About Me</a></li>
-                            <li><a href="#skills">Skills</a></li>
-                            <li><a href="#portfolio">Projects</a></li>
-                        
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
-                            Contact </button>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-dark" data-toggle="modal"
+                                    data-target="#exampleModal">
+                                    Contact </button>
 
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-                            aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <h2><strong>SIBEL BASLAMISLI</strong></h2>
-                                        <ul style="list-style-type:none;">
-                                            <li> &#9742; 216 802 9268</li>
-                                            <li><a href="mailto:sibaslamisli@gmail.com"> &#9993; sibaslamisli@gmail.com </a> </li>
-                                            <li>CLEVELAND/OH</li>
-                                            <li class="fa" style="font-size:36px;"><a
-                                                    href="https://www.linkedin.com/in/m-sibel-baslamisli-a14b6a90/"
-                                                    target="blank">&#xf08c;</a>
-                                                <a href="https://github.com/sialbul" target="blank"><i
-                                                        class="fa fa-github"></i></a>
-                                            </li>
-
-                                        </ul>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h2><strong>SIBEL BASLAMISLI</strong></h2>
+                                                <hr>
+                                                <p id="black">&#9742; 216 802 9268</p><br>
+                                                <p><a href="mailto:sibaslamisli@gmail.com"> &#9993;
+                                                        sibaslamisli@gmail.com </a> </p><br>
+                                                <p id="black">CLEVELAND/OH</p><br>
+                                                <p class="fa"><a id="modalLink"
+                                                        href="https://www.linkedin.com/in/m-sibel-baslamisli-a14b6a90/"
+                                                        target="blank">&#xf08c;</a> </p>
+                                                <p>
+                                                    <a href="https://github.com/sialbul" target="blank"
+                                                        id="modalLink"><i class="fa fa-github"></i></a>
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </ul>
                         </div>
-</ul>
                     </div>
                 </nav>
-
-
-
-
 
                 <div class="jumbotron jumbotron-fluid" id="intro">
                     <div class="typewriter">
                         <h3 id="about"> Hello! I`m Sibel Baslamisli. </h3>
                     </div>
                     <br>
-                    <img id="sibel" src="assets/images/sibel.png">
+                    <img id="sibel" class="circle responsive-img" src="assets/images/sibel.png">
                     <br><br>
                     <p id="jumbo_text">I used to make websites by using
                         templates in Wordpress and
@@ -114,10 +113,54 @@
                 <div class="typewriter">
                     <h3> Projects </h3>
                 </div>
-                <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
                 <div class="container5">
                     <div class="row" id="portfolio">
-                        <div class="col-md-6">
+                        <div class="col-md-4">
+                            <div id="projectBox">
+                                <div class="container">
+                                    <img src="assets/images/OnTrack.png" alt="OnTrack">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <p id="exp"> The application is implemented using HTML, CSS, JavaScript,
+                                                jQuery, Node, MySql, Heroku.
+                                                <br> </p>
+                                            <a target="_blank" title="Visit Website"
+                                                href="https://ancient-cove-33543.herokuapp.com/">
+                                                <i id=" githubLeft" class="fa fa-globe"></i>
+
+                                            </a>
+                                            <a href="https://github.com/sialbul/OnTrack" target="blank"><i
+                                                    id="githubLeft" class="fa fa-github"></i></a>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div id="projectBox">
+                                <div class="container">
+                                    <img src="assets/images/Clicky Game.png" alt="Clicky Game">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <p id="exp"> Clicky Memory Game built with React.js
+                                                <br> </p>
+                                            <a target="_blank" title="Visit Website"
+                                                href="https://shielded-brushlands-45047.herokuapp.com/">
+                                                <i id=" githubLeft" class="fa fa-globe"></i>
+                                            </a>
+                                            <a href="https://github.com/sialbul/Clicky-Game" title="GitHub"
+                                                target="blank">
+                                                <i id="githubLeft" class="fa fa-github"></i>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
                             <div id="projectBox">
                                 <div class="container">
                                     <!--Overlay container-->
@@ -127,22 +170,19 @@
                                             <p id="exp"> This project is a burger logger
                                                 with MySQL, Node, Express, Handlebars and <br>
                                                 a homemade ORM, following the MVC design pattern.
-                                                <br> <br>
-                                                <a target="_blank" title="Visit Website"
-                                                    href="https://peaceful-beyond-77283.herokuapp.com/">
-                                                    <i id="githubLeft" class="fa fa-globe"></i>
-
-                                                </a>
-                                                <a href="https://github.com/sialbul/burger" title="GitHub"
-                                                    target="blank"><i id="githubLeft" class="fa fa-github"></i></a>
-
-                                            </p>
+                                                <br></p>
+                                            <a target="_blank" title="Visit Website"
+                                                href="https://peaceful-beyond-77283.herokuapp.com/">
+                                                <i id="githubLeft" class="fa fa-globe"></i>
+                                            </a>
+                                            <a href="https://github.com/sialbul/burger" title="GitHub" target="blank"><i
+                                                    id="githubLeft" class="fa fa-github"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <div id="projectBox">
                                 <div class="container">
                                     <img src="assets/images/friend finder.png" alt="Friend Finder">
@@ -153,23 +193,22 @@
                                                 on
                                                 the
                                                 front end.
-                                                <br> <br>
-                                                <a target="_blank" title="Visit Website"
-                                                    href="https://boiling-lake-37451.herokuapp.com/">
-                                                    <i id=" githubLeft" class="fa fa-globe"></i>
+                                                <br></p>
+                                            <a target="_blank" title="Visit Website"
+                                                href="https://boiling-lake-37451.herokuapp.com/">
+                                                <i id=" githubLeft" class="fa fa-globe"></i>
 
-                                                </a>
-                                                <a href="https://github.com/sialbul/friendFinder" target="blank"><i
-                                                        id="githubLeft" class="fa fa-github"></i></a>
+                                            </a>
+                                            <a href="https://github.com/sialbul/friendFinder" target="blank"><i
+                                                    id="githubLeft" class="fa fa-github"></i></a>
 
-                                            </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <div id="projectBox">
                                 <div class="container">
                                     <img src="assets/images/bamazon.png" alt="Bamazon">
@@ -179,17 +218,17 @@
                                                 storefront
                                                 using
                                                 Node.js and MySQL.
-                                                <br> <br>
-                                                <a href="https://github.com/sialbul/bamazon" target="blank">
-                                                    <i id="githubLeft" class="fa fa-github"></i></a>
-                                            </p>
+                                                <br> </p>
+                                            <a href="https://github.com/sialbul/bamazon" target="blank">
+                                                <i id="githubLeft" class="fa fa-github"></i></a>
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <div id="projectBox">
                                 <div class="container">
                                     <img src="assets/images/liri-node.png" alt="liri-node">
@@ -202,17 +241,17 @@
                                                 Javascript Nodejs <br>
                                                 Node-Spotify-API Request Moment
                                                 DotEnv
-                                                Bands in Town API, OMDB API
-                                                <br><br>
-                                                <a href="https://github.com/sialbul/liri-node-app" target="blank"><i
-                                                        id="githubLeft" class="fa fa-github"></i></a></p>
+                                                Bands in Town API, OMDB API.
+                                                <br></p>
+                                            <a href="https://github.com/sialbul/liri-node-app" target="blank"><i
+                                                    id="githubLeft" class="fa fa-github"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <div id="projectBox">
                                 <div class="container">
                                     <img src="assets/images/rps.jpg" alt="Rock Paper Siccors">
@@ -221,14 +260,14 @@
                                             <p id="exp"> Rock Paper Scissors game is
                                                 an online multiplayer game with the help of
                                                 Firebase.
-                                                <br><br>
-                                                <a target="_blank" title="Visit Website"
-                                                    href="https://sialbul.github.io/RPS-Multiplayer/">
-                                                    <i id="githubLeft" class="fa fa-globe"></i>
-                                                </a>
-                                                <a href="https://github.com/sialbul/RPS-Multiplayer" target="blank"><i
-                                                        id="githubLeft" class="fa fa-github"></i></a>
-                                            </p>
+                                                <br></p>
+                                            <a target="_blank" title="Visit Website"
+                                                href="https://sialbul.github.io/RPS-Multiplayer/">
+                                                <i id="githubLeft" class="fa fa-globe"></i>
+                                            </a>
+                                            <a href="https://github.com/sialbul/RPS-Multiplayer" target="blank"><i
+                                                    id="githubLeft" class="fa fa-github"></i></a>
+
                                         </div>
                                     </div>
                                 </div>
@@ -236,7 +275,7 @@
 
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <div id="projectBox">
                                 <div class="container">
                                     <img src="assets/images/starwars.jpg" alt="Starwars">
@@ -244,13 +283,13 @@
                                         <div class="text">
                                             <p id="exp"> Star Wars RPG game using HTML5, CSS,
                                                 Bootstrap and jQuery.
-                                                <br><br>
-                                                <a target="_blank" title="Visit Website"
-                                                    href="https://sialbul.github.io/unit-4-game/">
-                                                    <i id="githubLeft" class="fa fa-globe"></i>
-                                                </a>
-                                                <a href="https://github.com/sialbul/unit-4-game" target="blank"><i
-                                                        id="githubLeft" class="fa fa-github"></i></a></p>
+                                                <br></p>
+                                            <a target="_blank" title="Visit Website"
+                                                href="https://sialbul.github.io/unit-4-game/">
+                                                <i id="githubLeft" class="fa fa-globe"></i>
+                                            </a>
+                                            <a href="https://github.com/sialbul/unit-4-game" target="blank"><i
+                                                    id="githubLeft" class="fa fa-github"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -258,7 +297,7 @@
                         </div>
 
 
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <div id="projectBox">
                                 <div class="container">
                                     <img src="assets/images/cityguide.jpg" alt="City Guide">
@@ -267,21 +306,21 @@
                                             <p id="exp">This application takes a city that the user
                                                 enters and retrieves relevant data from multiple APIs to
                                                 show information on the city entered.
-                                                <br><br>
-                                                <a target="_blank" title="Visit Website"
-                                                    href="https://kandrac.github.io/CityGuide/">
-                                                    <i id="githubLeft" class="fa fa-globe"></i>
+                                                <br></p>
+                                            <a target="_blank" title="Visit Website"
+                                                href="https://kandrac.github.io/CityGuide/">
+                                                <i id="githubLeft" class="fa fa-globe"></i>
 
-                                                </a>
-                                                <a href="https://github.com/Kandrac/CityGuide" target="blank"><i
-                                                        id="githubLeft" class="fa fa-github"></i></a></p>
+                                            </a>
+                                            <a href="https://github.com/Kandrac/CityGuide" target="blank"><i
+                                                    id="githubLeft" class="fa fa-github"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <div id="projectBox">
                                 <div class="container">
                                     <img src="assets/images/horror gif.jpg" alt="Horror Giphy">
@@ -292,20 +331,20 @@
                                                 gifs.<br>
                                                 It calls the GIPHY API and use JavaScript and jQuery
                                                 to change the HTML of the site.
-                                                <br><br>
-                                                <a target="_blank" title="Visit Website"
-                                                    href="https://sialbul.github.io/giphy-API/">
-                                                    <i id="githubLeft" class="fa fa-globe"></i>
-                                                </a>
-                                                <a href="https://github.com/sialbul/giphy-API" target="blank"><i
-                                                        id="githubLeft" class="fa fa-github"></i></a></p>
+                                                <br></p>
+                                            <a target="_blank" title="Visit Website"
+                                                href="https://sialbul.github.io/giphy-API/">
+                                                <i id="githubLeft" class="fa fa-globe"></i>
+                                            </a>
+                                            <a href="https://github.com/sialbul/giphy-API" target="blank"><i
+                                                    id="githubLeft" class="fa fa-github"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <div id="projectBox">
                                 <div class="container">
                                     <img src="assets/images/hangman.jpg" alt="Hangman">
@@ -313,44 +352,33 @@
                                         <div class="text">
                                             <p id="exp"> Hangman Game with 80`s music. Used Javascript,
                                                 HTML and CSS.
-                                                <br><br>
-                                                <a target="_blank" title="Visit Website"
-                                                    href="https://sialbul.github.io/Word-Guess-Game/">
-                                                    <i id="githubLeft" class="fa fa-globe"></i>
+                                                <br></p>
+                                            <a target="_blank" title="Visit Website"
+                                                href="https://sialbul.github.io/Word-Guess-Game/">
+                                                <i id="githubLeft" class="fa fa-globe"></i>
 
-                                                </a>
-                                                <a href="https://github.com/sialbul/Word-Guess-Game" target="blank"><i
-                                                        id="githubLeft" class="fa fa-github"></i></a>
-                                            </p>
+                                            </a>
+                                            <a href="https://github.com/sialbul/Word-Guess-Game" target="blank"><i
+                                                    id="githubLeft" class="fa fa-github"></i></a>
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
                     </div>
 
 
                 </div>
                 <!-- Footer -->
-                <footer class="page-footer font-small blue">
-                    <!-- Social buttons -->
-                    <ul class="list-unstyled list-inline text-center">
-
-                        <li class="fa" style="font-size:36px;">
-                            <a href="#intro">about me</a>
-                            <a href="#skills">skills</a>
-                            <a href="#portfolio">projects</a>
-                            <a href="https://www.linkedin.com/in/m-sibel-baslamisli-a14b6a90/"
-                                target="blank">&#xf08c;</a>
-                            <a href="https://github.com/sialbul" target="blank"><i class="fa fa-github"></i></a>
-                        </li>
-                    </ul>
-                    <!-- Social buttons -->
-
+                <footer class="page-footer font-small">
                     <!-- Copyright -->
-                    <div class="footer-copyright text-center py-3">
-                        <a href="mailto:sibaslamisli@gmail.com"> &#9993; sibaslamisli@gmail.com </a> |
+                    <div class="footer">
+                        <a id="modalLink" href="https://www.linkedin.com/in/m-sibel-baslamisli-a14b6a90/" target="blank"
+                            alt="Linkedin"><i class="fa fa-linkedin-square"></i></a>
+                        <a id="modalLink" href="https://github.com/sialbul" target="blank"><i
+                                class="fa fa-github"></i></a>
+                        <a href="mailto:sibaslamisli@gmail.com"> &#9993; sibaslamisli@gmail.com </a> <br>
                         © 2019 Copyright: Sibel Baslamisli
                     </div>
                     <!-- Copyright -->

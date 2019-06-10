@@ -3,49 +3,59 @@ body {
   margin:0;
   }
   
+nav{
+  background-color: white;
+  color:black;
+  padding-top: 10px;
+}
 
+nav ul a{
+  color: black;
+}
 .jumbotron{
 opacity: 0.9;
 background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/code3.jpg");
 background-position: center; /* Center the image */
 background-repeat: no-repeat; /* Do not repeat the image */
 background-size: cover; /* Resize the background image to cover the entire container */
-height: 20%;
+height: 25%;
   }
 
 #jumbo_text{
-  line-height: 40px;
-  color: white;
-  font-size: 20px;
-  width: 80%;
+line-height: 40px;
+color: white;
+font-size: 20px;
+width: 80%;
 text-align: center;
 }
 .modal-body{
-  text-align: center;
+text-align: center;
+line-height: 10px;
+color:black;
+}
+#black{
+  color:black;
 }
 
 #about{
-  color:white;
+color:white;
 }
 
 #sibel {
-  width: 18%; 
-  height: 70%;
-  border:2px solid white;
-  border-radius: 360px;
-  margin: 10px 40px;
-  float: left;
- 
+width: 20%;
+margin: 10px 40px;
+float: left;
 }
 
+
 .btn{
-  margin:10px;
+margin:10px;
 }
 
 
 #githubLeft {
   color:white;
-  size: 48px;
+  size: 65px;
 }
 
 
@@ -63,15 +73,11 @@ h2 {
   font-weight: bolder;
 }
 
-
-ul{
-  font-size: 20px;
-  padding-right: 10px;
-
-}
-
-li{
-  padding: 10px;
+#modalInfo li{
+  margin-right: 20px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 p {
@@ -111,10 +117,11 @@ p {
 
 .text {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 80%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -127,6 +134,7 @@ p {
   color: white;
   font-size: 16px;
   text-align: center;
+  width: 90%;
 }
 #portfolio {
   padding: 5px;
@@ -136,9 +144,9 @@ p {
 
 #projectBox {
   border:1px solid black;
-  background-color: rgba(0, 0, 0, 0.671);
-  width:70%;
-  height:300px;
+  background-color:black;
+  width:90%;
+  height:260px;
   margin:0 auto;  
   margin-bottom: 20px;
   
@@ -162,14 +170,14 @@ img {
   width: 100%;
   height: 100%;
   display: block;
-   margin-top: 30px;
+  margin-top: 30px;
 }
+#modalLink{font-size: 36px;}
 
 a  {
   color:black;
   text-decoration: none;
   margin-right: 5px;
-  font-size: 18px;
 }
 
 a:hover {
@@ -202,8 +210,15 @@ a:hover {
   width: 100%;
   margin-top: 50px;
 }
+.page-footer {
+  background-color: rgba(128, 128, 128, 0.534);
+  padding: 25px;
+  text-align: center;
+}
 
-
+footer a{
+  padding-right: 20px;
+}
 
 /* The typing effect */
 @keyframes typing {
@@ -239,43 +254,49 @@ a:hover {
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-@media only screen and (max-width: 1180px) {
-
-#sibel{
-  width: 20%;
-  height:55%;
-}
-}
 
 @media only screen and (max-width: 992px) {
-
   #sibel{
-    width: 25%;
-    height:50%;
-    margin: 10px 40px;
+  width: 25%;
   }
-  #intro {padding-left: 20px;}
+  nav{
+  height:100px;;    
   }
-  @media only screen and (max-width: 768px) {
+  #nav-mobile{
+  padding-top: 25px;
+  padding-right: 25%;
+  }
+  #intro {
+  padding-left: 20px;}
+  }
+  
 
-    #sibel{
-      width: 32%;
-      height:30%;
-      margin: 25px 180px;
+@media only screen and (max-width: 768px) {
+  #sibel{
+  width: 30%;
+  }
+  #jumbo_text{margin: 0 auto;
+  }     
+}
+ 
+    
+@media only screen and (max-width: 600px) {
+  #sibel{
+  width: 40%;
+  float: none;
+  margin: 0 auto;
+  } 
+  #intro {
+  padding-left: 20px;
+  text-align: center;
+  }
+  nav{
+    padding-top: 10px;
+    height:150px;
+    text-align: center;
+    padding-left: 80px;
     }
-    #jumbo_text{margin: 0 auto;
-    }
-    }
-    @media only screen and (max-width: 600px) {
-
-      #sibel{
-        width: 45%;
-        height:30%;
-        margin: 20px 140px;
-      }
-      #intro {padding-left: 40px;
-      text-align: center}
-      }
+  }
 
 @media only screen and (max-width: 480px) {
   /* For mobile phones: */
@@ -287,7 +308,7 @@ a:hover {
   #skillsImg {width: 15%; margin: 8px}
   #skills{ margin-top: 80px;
   width: 100%;
-margin-bottom: 50px;}
+  margin-bottom: 50px;}
   #skillsImg{width: 25%;
   margin: 5px;
   margin-right: 10px;}
@@ -299,43 +320,38 @@ margin-bottom: 50px;}
   padding-top: 15px;
   margin: 0px;
   }
-  #sibel{width: 55%;
-  height: 30%;
-  margin-left: 68px;}
+  #sibel{
+  width: 60%;
+  } 
   #about{
   font-size: 15px;
-}
+  }
   #jumbo_text{
   font-size: 15px;
   margin-left: 20px;
-  line-height: 22px;
-}
-  .container4{margin: 0 auto;
-  margin-left: 20px;}
-#portfolio{
+  line-height: 30px;
+  }
+  .container4{
+  margin: 0 auto;
+  margin-left: 20px;
+  }
+  #portfolio{
   width: 100%;
   margin-left: 0px;
   margin-right: 0px;
   padding: 0px;
-}
-#exp{font-size: 10px;
-width:200px;
-height: 80px;;}
-#githubLeft {size:8px;
-margin: 0px;}
-}
-
-  #myBtn {
-  display: none;
-  position: fixed;
-  bottom: 5px;
-  right: 30px;
-  z-index: 99;
-  background-color:  rgba(255, 0, 0, 0.473);
-  color: white;
   }
-
-footer {
-  background-color: #f2f2f2;
-  padding: 25px;
+  #exp{
+  font-size: 10px;
+  width:200px;
+  height: 80px;;}
+  #githubLeft {size:8px;
+  margin: 0px;}
+ 
+  nav{
+  padding-top: 10px;
+  height:150px;
+  text-align: center;
+  }
+  
 }
