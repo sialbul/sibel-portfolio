@@ -365,13 +365,11 @@ nav{
       background-color: white;
       color:black;
       padding-top: 30px;
-      padding-left: 15px;
+      padding-left: 5px;
       height: 200px;
     }
-   
-      #nav-mobile{
-      padding-top: 55px;
+#nav-mobile{
+      padding-top: 65px;
       text-align: center;
-      width: 100%;
             }
           }
