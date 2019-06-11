@@ -46,8 +46,9 @@ color:white;
 
 #sibel {
 width: 15%;
-margin: 10px 40px;
+margin: 10px 40px 10px 100px;
 float: left;
+border: 8px groove white;
 }
 
 .btn{
@@ -395,10 +396,13 @@ nav{
 background-color: white;
 color:black;
 padding-top: 30px;
-padding-left: 5px;
+padding-left: 2px;
 height: 250px;
+width: 100%;
 }
-
+button.btn.btn-dark {
+  margin-left: 0px;
+}
 #nav-mobile{
 margin-top: 65px;
 text-align: center;
