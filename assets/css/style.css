@@ -22,7 +22,7 @@ background-size: cover; /* Resize the background image to cover the entire conta
 height: 25%;
 }
 
-#jumbo_text{
+.jumbo_text{
 line-height: 40px;
 color: white;
 font-size: 20px;
