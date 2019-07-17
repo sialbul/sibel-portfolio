@@ -318,7 +318,7 @@ padding-left: 80px;
 @media only screen and (max-width: 480px) {
 /* For mobile phones: */
 [class*="col-"] {
-width: 90%;
+width: 100%;
 }
 
 #projectBox {width: 100%;
@@ -410,12 +410,19 @@ button.btn.btn-dark {
 #nav-mobile{
 margin-top: 65px;
 text-align: center;
+padding-right: 0px;  
 }
-
 .container4{
 width: 100%;
 }
+
 #skills{
-margin-left: -15px;
+margin-left: 0px;
+margin-right: 0px;
 }
+.jumbo_text{
+  width: 100%;
+  padding-right: 5px;
+}
+
 }
