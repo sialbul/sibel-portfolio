@@ -1,5 +1,0 @@
-$('#myModal').modal({
-  keyboard: false
-})
-
-
